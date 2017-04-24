@@ -3,5 +3,6 @@
 <h3><%= @creature.name %></h3>
 <p><%= @creature.description %></p>
 <br>
+<%= link_to "Edit this creature", edit_creature_path(@creature), class: "btn btn-xs btn-info" %>
 <br>
-<%= link_to "Back to see all creatures", creatures_path %>
+<%= link_to "<- Back to all creatures", creatures_path %>

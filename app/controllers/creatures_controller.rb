@@ -21,6 +21,7 @@ class CreaturesController < ApplicationController
   end
 
   def edit
+    @creature = Creature.find_by_id(params[:id])
   end
 
   def update
